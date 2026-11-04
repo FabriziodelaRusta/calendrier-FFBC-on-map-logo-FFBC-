@@ -38,6 +38,8 @@ jobs:
 
       - name: Configuration de GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Envoi de l'artefact dist
         uses: actions/upload-pages-artifact@v3
