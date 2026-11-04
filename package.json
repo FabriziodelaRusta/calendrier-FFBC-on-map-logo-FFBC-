@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build && cp dist/index.html dist/calendrier_OSM.html && cp dist/index.html ./calendrier_OSM.html && cp dist/index.html public/calendrier_OSM.html",
+    "build": "vite build",
+    "postbuild": "cp dist/index.html dist/calendrier_OSM.html && cp dist/index.html ./calendrier_OSM.html && cp dist/index.html public/calendrier_OSM.html",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit"
